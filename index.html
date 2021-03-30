@@ -6,9 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Weather Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!---Bootstrap-CSS--->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
   crossorigin="anonymous">
+
   <!---CSS-Link--->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -30,23 +32,95 @@
                 Plots
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
-                <a class="dropdown-item" href="humidity.html">Humidity</a>
-                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                <a class="dropdown-item" href="html/max_temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="html/humidity.html">Humidity</a>
+                <a class="dropdown-item" href="html/cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="html/wind_speed.html">Wind Speed</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="comparisons.html">Comparison</a>
+              <a class="nav-link" href="/html/comarison.html">Comparison</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="data.html">Data</a>
+              <a class="nav-link" href="html/data.html">Data</a>
             </li>
   
           </ul>
         </div>
       </nav>
     </div>
+
+<!-- Page Content and Links -->
+<!-- Header -->
+<div class="col-lg-12 col-md-12">
+  <div class="box" style="padding-bottom: 5px;">
+      <h2 class="title">Does the temperature <i>actually</i> rise the closer you are to the equator?</h2>
+    </div>
+  </div>
+
+
+<!-- Main Paragraph and Opening -->
+<div class="container">
+<div class="row">
+    <div class="col-lg-8 col-md-12">
+        <div class="box" style="padding-bottom: 20px;">
+            <h3 class="title">Temperature testing graph?</h3>
+            <hr>
+            <img src="Images/visualizations/Northern Latitude v Temperature (F).png" class="vizualization rounded float-left" alt="Max Temperature Graph">
+            <p>SAMPLE Text to be replaced with actual analysis</p>
+            <p>more analysis text in second paragraph</p>
+        </div>
+    </div>
+
+
+    <!-- Side Bar Visualziations Previews -->
+    <div class="col-lg-4 col-md-12">
+        <div class="box">
+            <h3 class="title" style = "text-align: center;">Visualizations</h3>
+            <hr>
+            <div class="container">
+                <div class="row" style="padding-bottom: 30px;">
+                    <div class="col-12">
+                        <a href="html_pages/cloudiness.html">
+                        <img class="panel" src="Images/visualizations/Latitude v Cloudiness.png" alt="Cloudiness Graph">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a href="html_pages/humidity.html">
+                        <img class="panel" src="Images/visualizations/Latitude v Humidity.png" alt="Humidity Graph">
+                        </a>
+                    </div>
+                </div>
+                <div class="row" style="padding-bottom: 30px;">
+                    <div class="col-12">
+                        <a href="html_pages/temperature.html">
+                        <img class="panel" src="Images/visualizations/Latitude v Temperature (F).png" alt="Temperature Graph">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a href="html_pages/wind_speed.html">
+                            <img class="panel" src="Images/visualizations/Latitude v Wind Speed.png" alt="Wind Speed Graph">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!-- Footer -->
+<footer>
+<div
+class="footer"> Yonis Hassan - Data Visualization and Analytics HW-11
+</div>
+</footer>
+
+</body>
+
+</html>
 </body>
 
 </html>
