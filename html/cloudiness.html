@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Weather Dashboard</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Bootstrap JS -->
+<!-- Bootstrap JaveScript (online resource) -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -57,76 +56,76 @@
         </nav>
     </div>
 
-    <!-- Page Content-->
+<!-- Page Content-->
 <div class="container">
-<div class="row">
-    <div class="col-lg-8 col-md-12">
-        <div class="box" style="padding-bottom: 20px;">
-            <h3 class="title">Latitude Vs Cloudiness:<br>Graph & Analysis</br></h3>
-            <hr>
-            <img src="Img/Lat_Vs_Cloudinesses" class="vizualization rounded float-left" alt="Cloudiness Graph">
-            <p>For this comparison we are looking at how the cloudiness of a city could be correlated to it's
-                distance from the equator. The data is a snapshot of roughly 500 cities taken at random from the
-                OpenWeatherMap API on February 12th, 2021.</p>
-            <p>As displayed in the graph, the data seems to suggest that that there is little to no discernable
-                correlation between the level of cloudiness and the latitude, as the points are dispersed across
-                the chart.</p>
-            <p> In addition to the this analysis, we collected data on three other aspects of weather to see how
-                they were potentially correlated with their distance from the equator. The four tested variables
-                in descending order as they appear on the right are:
-            <ul>
-                <li>Cloudiness</li>
-                <li>Humidity Percentage</li>
-                <li>Temperature</li>
-                <li>and Wind Speed</li>
-            </ul>
-            </p>
-            <p>
-                The four graphs to the right display our findings. You can click on a graph to learn more about
-                the specific findings from homework 9's analysis!
-            </p>
-        </div>
-    </div>
-
-
-<!-- Side Bar Visualziations Previews -->
-<div class="col-lg-4 col-md-12">
-    <div class="box">
-        <h3 class="title" style="text-align: center;">Visualizations</h3>
-        <hr>
-        <div class="container">
-            <div class="col-12" style="padding-bottom: 30px;">
-                <a href="cloudiness.html">
-                    <img class="panel" src="Img/Lat_Vs_Cloudinesses" alt="Cloudiness img">
-                </a>
+    <div class="row">
+        <div class="col-lg-8 col-md-12">
+            <div class="box" style="padding-bottom: 20px;">
+                <h3 class="title">Latitude Vs Cloudiness:<br>Graph & Analysis</br></h3>
+                <hr>
+                <img src="Img/Lat_Vs_Cloudinesses" class="vizualization rounded float-left" alt="Cloudiness Graph">
+                <p>For this comparison we are looking at how the cloudiness of a city could be correlated to it's
+                    distance from the equator. The data is a snapshot of roughly 500 cities taken at random from the
+                    OpenWeatherMap API on February 12th, 2021.</p>
+                <p>As displayed in the graph, the data seems to suggest that that there is little to no discernable
+                    correlation between the level of cloudiness and the latitude, as the points are dispersed across
+                    the chart.</p>
+                <p> In addition to the this analysis, we collected data on three other aspects of weather to see how
+                    they were potentially correlated with their distance from the equator. The four tested variables
+                    in descending order as they appear on the right are:
+                <ul>
+                    <li>Cloudiness</li>
+                    <li>Humidity Percentage</li>
+                    <li>Temperature</li>
+                    <li>and Wind Speed</li>
+                </ul>
+                </p>
+                <p>
+                    Click any plot to get an in-depth analysis
+                </p>
             </div>
-            <div class="col-12" style="padding-bottom: 30px;">
-                <a href="humidity.html">
-                    <img class="panel" src="Img/Lat_Vs_Humidities" alt="Humidity img">
-                </a>
-            </div>
-        </div>
-        <div class="col-12" style="padding-bottom: 30px;">
-            <a href="temperature.html">
-                <img class="panel" src="Img/Lat_Vs_Max_Temp" alt="Temperature img">
-            </a>
-        </div>
-        <div class="col-12" style="padding-bottom: 30px;">
-            <a href="wind_speed.html">
-                <img class="panel" src="Img/Lat_Vs_Wind" alt="Wind Speed img">
-            </a>
         </div>
     </div>
 </div>
 
+
+<!-- Side Bar Visualziations Previews -->
+    <div class="col-lg-4 col-md-12">
+        <div class="box">
+            <h3 class="title" style = "text-align: center;">Visualizations</h3>
+            <hr>
+            <div class="container">
+                <div class="col-12" style="padding-bottom: 30px;">
+                    <a href="cloudiness.html">
+                        <img class="panel" src="Img/Lat_Vs_Cloudinesses" alt="Cloudiness img">
+                    </a>
+                </div>
+                <div class="col-12" style="padding-bottom: 30px;">
+                    <a href="humidity.html">
+                        <img class="panel" src="Img/Lat_Vs_Humidities" alt="Humidity img">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12" style="padding-bottom: 30px;">
+                <a href="temperature.html">
+                    <img class="panel" src="Img/Lat_Vs_Max_Temp" alt="Temperature img">
+                </a>
+            </div>
+            <div class="col-12" style="padding-bottom: 30px;">
+                <a href="wind_speed.html">
+                    <img class="panel" src="Img/Lat_Vs_Wind" alt="Wind Speed img">
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
    
 
 
-    <!-- Footer -->
+<!-- footer -->
 <footer>
-    <div 
-    class="footer"> Yonis Hassan - Data Visualization and Analytics - HW-11
-    </div>
+    <div  class="footer"> Yonis Hassan - Data Visualization and Analytics - HW-11 </div>
 </footer>
 
 </body>
