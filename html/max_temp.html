@@ -7,14 +7,108 @@
         <title>Weather Dashboard</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
-        <!---Bootstrap-CSS--->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-        <!---CSS-Link--->
-        <link rel="stylesheet" type="text/css" href="style.css">
 
 <body>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<!-- Navigation Menu -->
+<div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-honeydew">
+        <a class="navbar-brand" style="background-color: clear;" href="index.html">Weather Data</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style= "color: white;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="cloudiness.html">Cloudiness Data</a>
+                       <a class="dropdown-item" href="humidity.html">Humidity Data</a>
+                       <a class="dropdown-item" href="temperature.html">Temperature Data</a>
+                       <a class="dropdown-item" href="wind_speed.html">Wind Speed Data</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style= "color: white;" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style= "color: white;" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  </div>
+  
+  <!-- Page Content-->
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-12">
+            <div class="box" style="padding-bottom: 20px;">
+                <h3 class="title">Latitude v Temperature:<br>Graph & Analysis</br></h3>
+                <hr>
+                <img src="Images/visualizations/Latitude v Temperature (F).png" class="vizualization rounded float-left" alt="Temperature Graph">
+                <p>For this comparison we are looking at how the temperature of a city could be correlated to it's distance from the equator. The data is a snapshot of roughly 500 cities taken at random from the OpenWeatherMap API on February 12th, 2021.</p>
+                <p>As displayed in the graph, the data seems to suggest that that the temperature seems to increase as it gets closer to 0 and decrease at varrying rates the further it gets from 0. This relationship supports the initial hypothesis that it gets warmer the closer you are to the equator. </p>
+                  <p> In addition to the this analysis, we collected data on three other aspects of weather to see how they were potentially correlated with their distance from the equator. The four tested variables in descending order as they appear on the right are:
+                  <ul>
+                    <li>Cloudiness</li>
+                    <li>Humidity Percentage</li>
+                    <li>Temperature</li>
+                    <li>and Wind Speed</li>
+                  </ul>
+                </p>
+                <p>
+                  The four graphs to the right display our findings. You can click on a graph to learn more about the specific findings from homework 9's analysis!
+                </p>
+            </div>
+        </div>
+  
+  
+        <!-- Side Bar Visualziations Previews -->
+   
+        <!-- Side Bar Visualziations Previews -->
+        <div class="col-lg-4 col-md-12">
+            <div class="box">
+                <h3 class="title" style = "text-align: center;">Visualizations</h3>
+                <hr>
+                <div class="container">
+                    <div class="col-12" style="padding-bottom: 30px;">
+                        <a href="cloudiness.html">
+                            <img class="panel" src="Img/Lat_Vs_Cloudinesses" alt="Cloudiness img">
+                        </a>
+                    </div>
+                    <div class="col-12" style="padding-bottom: 30px;">
+                        <a href="humidity.html">
+                            <img class="panel" src="Img/Lat_Vs_Humidities" alt="Humidity img">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12" style="padding-bottom: 30px;">
+                    <a href="temperature.html">
+                        <img class="panel" src="Img/Lat_Vs_Max_Temp" alt="Temperature img">
+                    </a>
+                </div>
+                <div class="col-12" style="padding-bottom: 30px;">
+                    <a href="wind_speed.html">
+                        <img class="panel" src="Img/Lat_Vs_Wind" alt="Wind Speed img">
+                          </a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div> 
+  
 
 </body>
 
