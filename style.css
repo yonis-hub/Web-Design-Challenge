@@ -71,7 +71,7 @@ a {
 
 /* Title */
 .title {
-  color: #e41d1d;
+  color: black;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-weight: bolder;
   padding-top: 10px;
@@ -90,7 +90,7 @@ img{
   height:100% !important;
 }
 .active, .panel:hover {
-  border-color:#940535;
+  border-color:black;
   border-style: solid;
   
 }
@@ -113,7 +113,7 @@ img{
 footer {
   border-top-style: solid;
   border-top-width: 5px;
-  border-top-color: #940535;
+  border-top-color: #b3b3b3;
   color: rgb(26, 26, 26);
   min-height: 30px;
   font-family: Arial, Helvetica, sans-serif;
@@ -121,8 +121,5 @@ footer {
   text-align: center;
   width: 100%;
   padding-top: 10px;
+  margin-bottom: 20;
   }
-
-.table-dark{
-
-}
