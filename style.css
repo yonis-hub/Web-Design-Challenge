@@ -52,7 +52,7 @@ a {
   }
   .navbar div {
     margin: inherit;
-    background-color: white;
+    background-color: rgb(232, 8, 8);
   }
   .navbar-brand {
     padding: 10px !important;
@@ -71,7 +71,7 @@ a {
 
 /* Title */
 .title {
-  color: #000000;
+  color: #e41d1d;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-weight: bolder;
   padding-top: 10px;
@@ -123,3 +123,6 @@ footer {
   padding-top: 10px;
   }
 
+.table-dark{
+
+}
