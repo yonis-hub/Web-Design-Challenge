@@ -95,8 +95,8 @@ img{
   
 }
 .vizualization {
-  width:65% !important;
-  height:65% !important;
+  width:70% !important;
+  height:70% !important;
   padding-right: 15px;
 }
 
@@ -113,7 +113,7 @@ img{
 footer {
   border-top-style: solid;
   border-top-width: 5px;
-  border-top-color: #b3b3b3;
+  border-top-color: #cd1818;
   color: rgb(26, 26, 26);
   min-height: 30px;
   font-family: Arial, Helvetica, sans-serif;
@@ -121,5 +121,4 @@ footer {
   text-align: center;
   width: 100%;
   padding-top: 10px;
-  margin-bottom: 20;
   }
